@@ -1,13 +1,13 @@
 # YourMove
 ## Requirements
 
-You need Python and PIP installed on your computer
+You need docker and docker-compose
 
 ## Install
 
-Simply use `pip install`  
-And then run `python3 manage.py migrate`
+Run `docker-compose build`  
+If needed run `docker-compose run web python manage.py createsuperuser` to create an admin user  
 
 ## Usage
 
-Run `python3 manage.py runserver`
+Run `docker-compose up` and go to http://localhost:8000/admin/ or http://localhost:8000/api/
